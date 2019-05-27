@@ -1,0 +1,253 @@
+/* Global Layout Set-up */
+* { 
+  box-sizing: border-box;
+}
+
+/* major styling for top body and footer elements */
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: rgb(50, 50, 50);
+  background-color: rgb(255, 225, 180);
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-left: 0px;
+  line-height: 1.5em;
+ }
+.top {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*internal characteristics for items*/
+nav {
+  color: rgb(50, 50, 50);
+  padding: 30px 0;
+}
+.nav-menu {
+  padding-top: 20px;
+  width: auto;
+}
+header img {
+  width: 70%;
+}
+.introduction {
+  padding: 0 5%;
+}
+img {
+  border-radius: 5px;
+}
+body p {
+  color: rgb(99, 99, 99);
+  padding: 0 13%;
+}
+
+.card img,
+.skills img {
+  width: 90%;
+  margin: 0 auto;
+}
+.card img:hover,
+.skills img:hover,
+.skills li:hover {
+ box-shadow: 0 0 20px -7px rgb(0, 77, 100);
+}
+
+main{
+  background-color: white;
+}
+.main-container {
+  padding: 45px 10px;
+}
+.main-container .title {
+  padding-bottom: 25px;
+}
+.contact-bar {
+  width: 90%;
+  margin: 50px auto 0;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgb(99, 99, 99);
+}
+/* Link Styles */
+
+.top li {
+  width: 90%;
+  margin: 5px auto;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  background-color: white;
+}
+a:hover {
+  transform: scale(1.2);
+}
+.top li:hover {
+  background-color: rgb(179, 237, 255);
+}
+a {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(50, 50, 50);
+}
+a:visited {
+  color: rgb(35, 70, 136);
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+.skills li {
+  display: inline-block;
+  padding: 5px;
+  background-color: rgb(251, 208, 255);
+  border-radius: 5px;
+}
+.skills .title {
+  margin-top: 15px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.contact-bar li {
+  margin: auto auto 10px;
+  width: 180px;
+  text-align: center;
+}
+.contact-bar a {
+  font-weight: bolder;
+}
+.contact-bar p {
+  padding: 0 10%;
+  }
+footer {
+  font-size: smaller;
+  margin: 0 20px 15px;
+}
+.footer-name {
+  float: left;
+  font-weight: bolder;
+  }
+.footer-link {
+  float: right;
+}
+/* ----------------------MEDIA QUERIES------------------- */
+@media (min-width: 768px) {
+  header {
+    text-align: left;
+    padding-bottom: 40px;
+  }
+  header img {
+    float: right;
+    margin: auto;
+    width: 40%;
+  }
+  .top .name {
+    font-size: 3.5em;
+  }
+  .introduction {
+    float: left;
+    width: 60%;
+    margin: 0;
+    padding-left: 0;
+  }
+  .top {
+    width: 95%;
+    margin: auto;
+  }
+  .top li{
+    display: inline-block;
+    width: 125px;
+    background-color: transparent;
+  }
+  .top li:hover {
+    background-color: transparent;
+  }
+  .card {
+    width: 50%;
+    float: left;
+    height: 47vw;
+  }
+  .skills .tile {
+    float: left;
+    width: 50%;
+    height: 30vw;
+    margin-top: 30px;
+  }
+  .skills .title {
+    margin-top: 0;
+  }
+  .contact-bar p {
+    padding: 0 20%;
+  }
+  footer {
+    display: none;
+  }
+  alternate-footer {
+    padding-bottom: 50px;
+  }
+  alternate-footer .name {
+    float: left;
+    padding: 15px;
+  }
+  alternate-footer ul{
+    margin-right: 10px;
+    float: right;
+  }
+  alternate-footer li{
+    float: left;
+    margin: auto;
+    padding: 15px;
+    font-weight: bolder;
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+      width: 33.33%;
+      height: 35vw;
+    }
+  .name {
+    float: left;
+    margin-top: 30px;
+  }
+  .nav-menu {
+    float: right;
+    padding: 0;
+    margin-right: 30px;
+  }
+  .nav-menu li {
+    float: left;
+  }
+  header {
+    clear: both;
+    padding-top: 20px;
+    font-size: larger;
+  }
+
+  .skills .title {
+    padding-top: 20px;
+  }
+  .skills .tile {
+    height: 25vw;
+  }
+  .contact-bar p {
+    padding: 0 30%;
+  }
+}
+
+
+/* ----------------------CLEARFIX------------------------ */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* ----------------------ALTERNATE FOOTER---------------- */
+@media (max-width: 767px) {
+  alternate-footer {
+    display: none;
+  }
+}
